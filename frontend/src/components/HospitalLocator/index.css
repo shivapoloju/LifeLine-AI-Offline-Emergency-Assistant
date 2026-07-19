@@ -5,11 +5,11 @@
 }
 
 .hospital-card {
-  background: rgba(30, 41, 59, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
   border-radius: 24px;
   padding: 2.5rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 30px rgba(37, 99, 235, 0.08);
 }
 
 .hospital-header {
@@ -20,31 +20,32 @@
 }
 
 .header-icon {
-  color: #f59e0b;
-  background: rgba(245, 158, 11, 0.15);
+  color: #2563eb;
+  background: #eff6ff;
   padding: 0.5rem;
   border-radius: 12px;
+  border: 1px solid #dbeafe;
 }
 
 .title {
   font-family: 'Outfit', sans-serif;
   font-size: 1.8rem;
   font-weight: 800;
-  color: #f8fafc;
+  color: #1e3a8a;
 }
 
 .subtitle {
   font-size: 0.9rem;
-  color: #94a3b8;
+  color: #64748b;
 }
 
 .gps-banner {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
   padding: 0.75rem 1rem;
   border-radius: 12px;
   margin-bottom: 2rem;
@@ -55,8 +56,8 @@
 .section-title {
   font-family: 'Outfit', sans-serif;
   font-size: 1.3rem;
-  font-weight: 700;
-  color: #f8fafc;
+  font-weight: 800;
+  color: #1e3a8a;
   margin-bottom: 1.25rem;
 }
 
@@ -67,8 +68,8 @@
 }
 
 .hospital-item-card {
-  background: #0f172a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
   border-radius: 16px;
   padding: 1.25rem;
   display: flex;
@@ -87,7 +88,7 @@
   font-family: 'Outfit', sans-serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: #ffffff;
+  color: #0f172a;
 }
 
 .distance-badge {
@@ -100,7 +101,7 @@
 }
 
 .hosp-address {
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.85rem;
   margin-bottom: 1rem;
 }
@@ -122,8 +123,8 @@
   border-radius: 6px;
 }
 
-.cap-green { background: rgba(16, 185, 129, 0.15); color: #34d399; }
-.cap-red { background: rgba(239, 68, 68, 0.15); color: #fca5a5; }
+.cap-green { background: #ecfdf5; color: #047857; border: 1px solid #a7f3d0; }
+.cap-red { background: #fef2f2; color: #dc2626; border: 1px solid #fecaca; }
 
 .hosp-call-btn {
   display: flex;
