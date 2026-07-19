@@ -1,0 +1,202 @@
+.injury-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.injury-card {
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.injury-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-icon {
+  color: #8b5cf6;
+  background: rgba(139, 92, 246, 0.15);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.upload-box {
+  background: #0f172a;
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.drop-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.upload-icon {
+  color: #8b5cf6;
+}
+
+.upload-text {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.upload-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.browse-file-btn {
+  background: #2563eb;
+  color: #ffffff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.sample-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cbd5e1;
+  border: none;
+  padding: 0.6rem 1.25rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.injury-preview-img {
+  max-width: 320px;
+  max-height: 220px;
+  border-radius: 14px;
+  border: 2px solid #8b5cf6;
+  object-fit: cover;
+}
+
+.change-img-btn {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  padding: 0.4rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.run-analysis-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+  color: #ffffff;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(139, 92, 246, 0.4);
+}
+
+.analysis-result-card {
+  margin-top: 1.5rem;
+  background: #0f172a;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+}
+
+.result-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.result-type-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.injury-type-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.confidence-text {
+  font-size: 0.8rem;
+  color: #a78bfa;
+}
+
+.severity-tag {
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+}
+
+.tag-high { background: rgba(239, 68, 68, 0.2); color: #fca5a5; border: 1px solid rgba(239, 68, 68, 0.4); }
+.tag-medium { background: rgba(245, 158, 11, 0.2); color: #fde047; border: 1px solid rgba(245, 158, 11, 0.4); }
+
+.result-body-section {
+  margin-bottom: 1.25rem;
+}
+
+.section-title-sm {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 0.5rem;
+}
+
+.text-green { color: #34d399; }
+.text-red { color: #fca5a5; }
+
+.features-list, .recommendations-list, .avoid-list {
+  padding-left: 1.25rem;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.avoid-bg {
+  background: rgba(239, 68, 68, 0.08);
+  padding: 1rem;
+  border-radius: 12px;
+}

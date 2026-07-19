@@ -1,0 +1,19 @@
+# Node & Frontend dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+
+# Python & Backend Caches
+backend/__pycache__/
+backend/*/__pycache__/
+backend/*/*/__pycache__/
+backend/.pytest_cache/
+backend/venv/
+backend/env/
+
+# Environment Variables & Logs
+*.env
+*.log
+.DS_Store
+Thumbs.db

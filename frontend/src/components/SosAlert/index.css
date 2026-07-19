@@ -1,0 +1,131 @@
+.sos-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(12px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.sos-modal-content {
+  background: linear-gradient(135deg, #1e1b4b 0%, #450a0a 100%);
+  border: 2px solid #ef4444;
+  border-radius: 28px;
+  width: 100%;
+  max-width: 550px;
+  padding: 2.5rem;
+  position: relative;
+  box-shadow: 0 0 50px rgba(239, 68, 68, 0.6);
+  text-align: center;
+}
+
+.sos-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sos-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sos-pulse-icon {
+  color: #ef4444;
+  animation: pulse-sos-icon 1s infinite;
+}
+
+@keyframes pulse-sos-icon {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}
+
+.sos-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.sos-subtitle {
+  color: #fca5a5;
+  font-size: 0.9rem;
+}
+
+.siren-control-bar {
+  margin-bottom: 1.5rem;
+}
+
+.siren-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.siren-on { background: #dc2626; color: #ffffff; }
+.siren-off { background: rgba(255, 255, 255, 0.1); color: #ffffff; }
+
+.location-box {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.loc-icon { color: #34d399; }
+.loc-label { font-size: 0.7rem; font-weight: 800; color: #94a3b8; display: block; }
+.loc-link { color: #60a5fa; font-size: 0.85rem; font-weight: 600; word-break: break-all; }
+
+.sos-actions-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.sos-action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding: 0.85rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.btn-red { background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%); }
+.btn-green { background: linear-gradient(135deg, #10b981 0%, #047857 100%); }
+.btn-blue { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); }

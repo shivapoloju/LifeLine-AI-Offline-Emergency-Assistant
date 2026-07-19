@@ -1,0 +1,171 @@
+{
+  "emergencies": [
+    {
+      "id": "cardiac_arrest",
+      "title": "Chest Pain / Suspected Cardiac Arrest",
+      "title_hi": "छाती में दर्द / दिल का दौरा",
+      "title_te": "ఛాతీ నొప్పి / గుండెపోటు",
+      "severity": "CRITICAL",
+      "symptoms": ["chest pain", "pain radiating to left arm", "shortness of breath", "sweating", "dizziness"],
+      "first_aid": [
+        "Call emergency 108 immediately.",
+        "Have the person sit down, rest, and keep calm.",
+        "Loosen tight clothing around neck and chest.",
+        "If unconscious and not breathing normally, perform CPR (100-120 chest compressions per minute).",
+        "Do NOT leave the person unattended."
+      ],
+      "first_aid_hi": [
+        "तुरंत 108 आपातकालीन नंबर पर कॉल करें।",
+        "व्यक्ति को बैठाएं, शांत रखें और आराम करने दें।",
+        "गले और छाती के कपड़े ढीले करें।",
+        "यदि व्यक्ति बेहोश है और सांस नहीं ले रहा, तो CPR दें (100-120 दबाव प्रति मिनट)।"
+      ],
+      "first_aid_te": [
+        "వెంటనే 108 ఎమర్జెన్సీ నంబర్‌కు కాల్ చేయండి.",
+        "వ్యక్తిని కూర్చోబెట్టి, ప్రశాంతంగా ఉండనివ్వండి.",
+        "మెడ, ఛాతీ వద్ద బిగుతుగా ఉన్న దుస్తులను వదులు చేయండి.",
+        "శ్వాస తీసుకోకపోతే CPR (నిమిషానికి 100-120 నొక్కులు) చేయండి."
+      ],
+      "do_not_take": ["Do NOT give food or drink to an unconscious person.", "Do NOT administer heavy painkillers without medical advice."],
+      "video_guide": "https://www.youtube.com/embed/cosVBV96E2g"
+    },
+    {
+      "id": "snake_bite",
+      "title": "Snake Bite Emergency",
+      "title_hi": "सांप का काटना",
+      "title_te": "పాము కాటు",
+      "severity": "CRITICAL",
+      "symptoms": ["bite marks", "swelling", "severe pain", "nausea", "difficulty breathing", "blurred vision"],
+      "first_aid": [
+        "Keep the victim calm and still. Movement spreads venom faster.",
+        "Immobilize the bitten limb at or below heart level using a splint.",
+        "Remove jewelry or tight clothing near the bite before swelling starts.",
+        "Transport to the nearest hospital with Anti-Snake Venom (ASV) immediately."
+      ],
+      "first_aid_hi": [
+        "पीड़ित को शांत और स्थिर रखें। हिलने-डुलने से जहर तेजी से फैलता है।",
+        "काटे गए अंग को स्थिर रखें (दिल के स्तर से नीचे)।",
+        "सूजन शुरू होने से पहले अंगूठियां/गहने निकाल दें।",
+        "तुरंत ASV (एंटी स्नेक वेनम) वाले नजदीकी अस्पताल ले जाएं।"
+      ],
+      "first_aid_te": [
+        "బాధితుడిని ప్రశాంతంగా, నిశ్చలంగా ఉంచండి. కదలడం వల్ల విషం వేగంగా వ్యాపిస్తుంది.",
+        "కాటు వేసిన అవయవాన్ని గుండె స్థాయి కంటే కింద ఉంచి నిశ్చలంగా ఉంచండి.",
+        "కాటు వద్ద ఉన్న ఉంగరాలు, ఆభరణాలను వెంటనే తొలగించండి.",
+        "యాంటీ స్నేక్ వెనమ్ (ASV) ఉన్న సమీప ఆసుపత్రికి వెంటనే తరలించండి."
+      ],
+      "do_not_take": [
+        "CRITICAL: Do NOT cut the bite area or try to suck venom out.",
+        "Do NOT apply a tight tourniquet that cuts off blood circulation completely.",
+        "Do NOT give alcohol, coffee, or pain medications like Aspirin/Ibuprofen."
+      ]
+    },
+    {
+      "id": "burns",
+      "title": "Severe Thermal or Chemical Burns",
+      "title_hi": "गंभीर जलन",
+      "title_te": "తీవ్రమైన కాలిన గాయాలు",
+      "severity": "HIGH",
+      "symptoms": ["blisters", "blackened or charred skin", "extreme pain or numbness"],
+      "first_aid": [
+        "Cool the burn immediately under clean running water for at least 10-20 minutes.",
+        "Cover burn loosely with clean, non-stick sterile cloth or plastic wrap.",
+        "Keep the patient warm to prevent hypothermia."
+      ],
+      "first_aid_hi": [
+        "जले हुए हिस्से पर कम से कम 10-20 मिनट तक ठंडा बहता पानी डालें।",
+        "साफ, सूती कपड़े या स्टेराइल पट्टी से ढीला ढकें।",
+        "बर्फ या घी का इस्तेमाल कभी न करें।"
+      ],
+      "first_aid_te": [
+        "కాలిన ప్రాంతంపై కనీసం 10-20 నిమిషాలు చల్లని పారే నీటిని పోయండి.",
+        "పరిశుభ్రమైన క్లాత్ తో వదులుగా కప్పండి.",
+        "మంచు లేదా నెయ్యి రాయవద్దు."
+      ],
+      "do_not_take": [
+        "Do NOT apply ice directly to burns.",
+        "Do NOT break blisters.",
+        "Do NOT apply butter, toothpaste, oil, or turmeric on open burns."
+      ]
+    },
+    {
+      "id": "heatstroke",
+      "title": "Severe Heatstroke / Sunstroke",
+      "title_hi": "लू लगना / हीटस्ट्रोक",
+      "title_te": "వడదెబ్బ / హీట్‌స్ట్రోక్",
+      "severity": "HIGH",
+      "symptoms": ["high body temp > 103F", "hot dry red skin", "rapid pulse", "confusion or fainting"],
+      "first_aid": [
+        "Move person to a cool, shaded area immediately.",
+        "Cool body rapidly using cold wet cloths, ice packs under armpits/groin, or cold water spray.",
+        "Give cool water or ORS solution if conscious."
+      ],
+      "first_aid_hi": [
+        "व्यक्ति को तुरंत ठंडी, छायादार जगह पर ले जाएं।",
+        "गीले ठंडे कपड़े या बर्फ की पट्टी बगल/गर्दन पर रखकर तापमान कम करें।",
+        "होश में होने पर ORS घोल या ठंडा पानी दें।"
+      ],
+      "first_aid_te": [
+        "వ్యక్తిని వెంటనే చల్లని, నీడ ఉన్న ప్రదేశానికి తరలించండి.",
+        "చంకలు, మెడ భాగాల్లో చల్లని బట్టతో తుడిచి ఉష్ణోగ్రత తగ్గించండి.",
+        "స్పృహలో ఉంటే ఓఆర్‌ఎస్ (ORS) ద్రావణం లేదా చల్లని నీరు ఇవ్వండి."
+      ],
+      "do_not_take": ["Do NOT give sugary energy drinks or alcohol.", "Do NOT submerge an unconscious person in water."]
+    }
+  ],
+  "contraindications": [
+    {
+      "condition": "Suspected Dengue / Viral Hemorrhagic Fever",
+      "warning": "Aspirin & NSAIDs (Ibuprofen, Naproxen) worsen internal bleeding!",
+      "safe_alternative": "Paracetamol / Acetaminophen (for fever management under medical advice)."
+    },
+    {
+      "condition": "Snake Bite",
+      "warning": "Blood thinners, Aspirin, Alcohol, or Cutting/Sucking wound cause massive hemorrhage & tissue necrosis!",
+      "safe_alternative": "Immobilize limb & transport immediately to hospital with Anti-Snake Venom (ASV)."
+    },
+    {
+      "condition": "Severe Dehydration / Kidney Impairment",
+      "warning": "High dose NSAIDs (Ibuprofen) can cause acute kidney injury!",
+      "safe_alternative": "ORS (Oral Rehydration Solution) & isotonic fluid electrolytes."
+    }
+  ],
+  "hospitals": [
+    {
+      "id": 1,
+      "name": "District Emergency & Trauma Center",
+      "lat": 17.3850,
+      "lng": 78.4867,
+      "address": "Main Highway Road, Sector 4",
+      "phone": "+91 98765 43210",
+      "distance_km": 1.2,
+      "has_asv": true,
+      "has_icu": true,
+      "oxygen_available": true
+    },
+    {
+      "id": 2,
+      "name": "Sanjivani Rural Community Hospital",
+      "lat": 17.3980,
+      "lng": 78.4980,
+      "address": "Village Panchayat Road",
+      "phone": "+91 98765 11223",
+      "distance_km": 3.5,
+      "has_asv": true,
+      "has_icu": false,
+      "oxygen_available": true
+    },
+    {
+      "id": 3,
+      "name": "Red Cross Emergency First Responder Post",
+      "lat": 17.3710,
+      "lng": 78.4720,
+      "address": "Near Central Bus Depot",
+      "phone": "+91 91234 56789",
+      "distance_km": 5.1,
+      "has_asv": false,
+      "has_icu": false,
+      "oxygen_available": true
+    }
+  ]
+}
