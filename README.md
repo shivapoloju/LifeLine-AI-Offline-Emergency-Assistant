@@ -1,6 +1,13 @@
 # LifeLine AI – Offline Emergency Medical Assistant 🚑💡
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-2563eb?style=for-the-badge&logo=vercel&logoColor=white)](https://life-line-ai-offline-emergency-assi.vercel.app/)
+[![License](https://img.shields.io/badge/License-MIT-10b981?style=for-the-badge)](https://github.com/shivapoloju/LifeLine-AI-Offline-Emergency-Assistant)
+[![React](https://img.shields.io/badge/React-18-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+
 **LifeLine AI** is a disaster-resilient, offline-first HealthTech and Emergency Response application designed for rural villages, low-connectivity regions, and crisis situations. It provides real-time AI symptom triage, multi-lingual voice interactions (English, Hindi, Telugu), step-by-step first-aid protocols, Gemini visual injury assessment, GPS hospital locating, drug interaction safety warnings, and instant emergency PDF report generation — functioning seamlessly even without internet access.
+
+👉 **Live Production App**: **[https://life-line-ai-offline-emergency-assi.vercel.app/](https://life-line-ai-offline-emergency-assi.vercel.app/)**
 
 ---
 
@@ -70,7 +77,7 @@ graph TD
 ### **Frontend**
 - **Core Framework**: React 18 + Vite
 - **Routing**: React Router DOM v6
-- **Styling**: Modern Custom CSS Glassmorphism Design System
+- **Styling**: Modern Custom CSS Glassmorphism Design System (Vibrant Blue & White Theme)
 - **Icons**: Lucide React
 - **Document Generation**: jsPDF
 - **Speech Engine**: Web Speech API (SpeechRecognition & SpeechSynthesis)
