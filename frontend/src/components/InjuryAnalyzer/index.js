@@ -20,6 +20,7 @@ const InjuryAnalyzer = () => {
   const [analysisResult, setAnalysisResult] = useState(null)
 
   const t = translations[activeLanguage] || translations.EN
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
   const handleFileChange = (e) => {
     if (e.target.files && e.target.files[0]) {
@@ -88,7 +89,7 @@ const InjuryAnalyzer = () => {
           formData.append('file', new Blob(["sample"], { type: "image/jpeg" }), "sample.jpg")
         }
 
-        const response = await fetch('http://localhost:8000/api/analyze-injury', {
+        const response = await fetch(`${API_BASE_URL}/api/analyze-injury`, {
           method: 'POST',
           body: formData
         })
@@ -132,7 +133,7 @@ const InjuryAnalyzer = () => {
             <Eye color="#8b5cf6" size={24} />
             <div>
               <h2 className="injury-type-title">{injury_type}</h2>
-              <span className="confidence-text">AI Confidence: {confidence_score}</span>
+              <span className="confidence-text">{t.ai_confidence} {confidence_score}</span>
             </div>
           </div>
 

@@ -9,6 +9,7 @@ const HospitalLocator = () => {
   const [gpsStatus, setGpsStatus] = useState('')
   const [hospitalsList, setHospitalsList] = useState([])
   const t = translations[activeLanguage] || translations.EN
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
   useEffect(() => {
     setGpsStatus(t.gps_active)
@@ -17,7 +18,7 @@ const HospitalLocator = () => {
 
   const fetchHospitals = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/hospitals')
+      const res = await fetch(`${API_BASE_URL}/api/hospitals`)
       if (res.ok) {
         const data = await res.json()
         setHospitalsList(data)
@@ -85,7 +86,7 @@ const HospitalLocator = () => {
               <div key={hosp.id} className="hospital-item-card">
                 <div className="hosp-card-header">
                   <h3 className="hosp-name">{hosp.name}</h3>
-                  <span className="distance-badge">{hosp.distance_km} km</span>
+                  <span className="distance-badge">{hosp.distance_km} {t.km_away}</span>
                 </div>
                 <p className="hosp-address">{hosp.address}</p>
 

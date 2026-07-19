@@ -21,11 +21,12 @@ const SymptomTriage = () => {
   const [isRecordingVoice, setIsRecordingVoice] = useState(false)
 
   const t = translations[activeLanguage] || translations.EN
+  const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
   const quickSymptoms = [
     { label: 'Chest Pain / Shortness of Breath', label_hi: 'सीने में दर्द / सांस फूलना', label_te: 'ఛాతీ నొప్పి / శ్వాస ఇబ్బంది' },
     { label: 'Snake Bite Emergency', label_hi: 'सांप का काटना', label_te: 'పాము కాటు ఎమర్జెన్సీ' },
-    { label: 'Severe Thermal Burn', label_hi: 'गंभीर जलन', label_te: 'తీవ్రమైన కాలిన గాయాలు' },
+    { label: 'Severe Thermal Burn', label_hi: 'गंभीर जलन', label_te: 'తీవ్రమైన కాలిన గాयां' },
     { label: 'High Fever with Rash', label_hi: 'तेज बुखार और चकत्ते', label_te: 'తీవ్రమైన జ్వరం' },
     { label: 'Fracture / Bone Injury', label_hi: 'हड्डी टूटना', label_te: 'ఎముక విరగడం' },
   ]
@@ -91,7 +92,7 @@ const SymptomTriage = () => {
           setApiStatus(apiStatusConstants.success)
         }, 800)
       } else {
-        const response = await fetch('http://localhost:8000/api/triage', {
+        const response = await fetch(`${API_BASE_URL}/api/triage`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ symptoms: symptomsInput, language: activeLanguage })
@@ -102,7 +103,6 @@ const SymptomTriage = () => {
         const ai = data.ai_prediction || {}
         const rag = data.rag_kb || {}
 
-        // Guarantee 100% native language translation fallback if backend returned English strings
         let result = {
           severity: ai.severity || rag.severity || 'HIGH',
           title: ai.title || rag.title || 'Emergency Assessment',
@@ -113,7 +113,6 @@ const SymptomTriage = () => {
           is_offline_result: false
         }
 
-        // If active language is TE or HI and returned steps are in English, substitute with native language translation
         if ((activeLanguage === 'TE' || activeLanguage === 'HI') && isEnglishText(result.first_aid_steps[0])) {
           result = generateLocalTriage(symptomsInput, activeLanguage)
         }
@@ -124,7 +123,6 @@ const SymptomTriage = () => {
       }
     } catch (err) {
       console.error('Triage error:', err)
-      // Fallback to local triage engine in target language
       const result = generateLocalTriage(symptomsInput, activeLanguage)
       setTriageData(result)
       addTriageRecord(result)
@@ -139,7 +137,6 @@ const SymptomTriage = () => {
 
   const generateLocalTriage = (query, lang) => {
     const lower = query.toLowerCase()
-    let severity = 'MEDIUM'
 
     if (lang === 'TE') {
       if (lower.includes('పాము') || lower.includes('కాటు') || lower.includes('snake') || lower.includes('bite')) {
