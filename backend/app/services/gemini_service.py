@@ -200,6 +200,86 @@ class GeminiAIService:
                     ],
                     "urgency_note": "URGENT MEDICAL ATTENTION RECOMMENDED"
                 }
+            elif "fever" in lower or "rash" in lower or "cold" in lower or "flu" in lower:
+                return {
+                    "severity": "MEDIUM",
+                    "title": "Fever & Infection Assessment",
+                    "summary": "Fever symptoms registered. Monitor for severe warning signs.",
+                    "first_aid_steps": [
+                        "Keep patient hydrated with clean water or ORS.",
+                        "Use cold compresses on the forehead to help reduce body temperature.",
+                        "Wear loose, light clothing and rest in a cool room."
+                    ],
+                    "medicines_to_avoid": [
+                        "Do NOT take Aspirin or Ibuprofen if Dengue or bleeding is suspected (use Paracetamol instead).",
+                        "Do NOT take antibiotics without consulting a doctor."
+                    ],
+                    "urgency_note": "Seek medical review if fever exceeds 103°F (39.4°C) or lasts over 3 days."
+                }
+            elif "fracture" in lower or "bone" in lower or "fall" in lower or "injury" in lower:
+                return {
+                    "severity": "HIGH",
+                    "title": "Suspected Fracture / Musculoskeletal Injury",
+                    "summary": "Bone/joint injury symptoms registered.",
+                    "first_aid_steps": [
+                        "Immobilize the injured area using a splint or rolled newspapers.",
+                        "Apply a cold pack wrapped in a cloth to reduce swelling.",
+                        "Keep the injured limb elevated if possible."
+                    ],
+                    "medicines_to_avoid": [
+                        "Do NOT try to re-align or push back a broken bone.",
+                        "Do NOT massage or apply hot compresses to the injured area."
+                    ],
+                    "urgency_note": "Seek immediate orthopedic evaluation."
+                }
+            elif "bleed" in lower or "cut" in lower or "wound" in lower:
+                return {
+                    "severity": "HIGH",
+                    "title": "Active Bleeding / Laceration Care",
+                    "summary": "Bleeding wound symptoms registered.",
+                    "first_aid_steps": [
+                        "Apply direct pressure to the wound using a clean cloth or bandage.",
+                        "Elevate the bleeding limb above the level of the heart.",
+                        "Once bleeding stops, clean the surrounding area with soap and water."
+                    ],
+                    "medicines_to_avoid": [
+                        "Do NOT remove embedded foreign objects (like glass or metal shards).",
+                        "Do NOT apply dirty cloths or soil to stop bleeding."
+                    ],
+                    "urgency_note": "Seek clinical dressing and Tetanus booster vaccine."
+                }
+            elif "chok" in lower or "throat" in lower or "airway" in lower:
+                return {
+                    "severity": "CRITICAL",
+                    "title": "Acute Airway Obstruction / Choking",
+                    "summary": "Choking emergency symptoms registered.",
+                    "first_aid_steps": [
+                        "If the person can cough, encourage them to cough hard.",
+                        "If unable to speak or breathe, perform 5 back blows between shoulder blades.",
+                        "Perform 5 abdominal thrusts (Heimlich Maneuver) if back blows fail."
+                    ],
+                    "medicines_to_avoid": [
+                        "Do NOT try to finger-sweep the throat blindly as it may push the object deeper.",
+                        "Do NOT give water or food to a choking person."
+                    ],
+                    "urgency_note": "IMMEDIATE EMERGENCY DISPATCH REQUIRED"
+                }
+            elif "poison" in lower or "chemical" in lower or "toxic" in lower:
+                return {
+                    "severity": "CRITICAL",
+                    "title": "Acute Poisoning / Toxic Ingestion",
+                    "summary": "Poisoning symptoms registered.",
+                    "first_aid_steps": [
+                        "Identify the substance, quantity, and ingestion time.",
+                        "If conscious, rinse mouth with water.",
+                        "Call national poison control hotline or emergency services immediately."
+                    ],
+                    "medicines_to_avoid": [
+                        "Do NOT induce vomiting unless explicitly instructed by medical professionals.",
+                        "Do NOT give activated charcoal or home remedies without guidance."
+                    ],
+                    "urgency_note": "IMMEDIATE CLINICAL TOXICOLOGY PROTOCOL REQUIRED"
+                }
             else:
                 return {
                     "severity": severity,
